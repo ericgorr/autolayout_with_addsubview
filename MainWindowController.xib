@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="aocsCalc" customModuleProvider="target">
+            <connections>
+                <outlet property="calcContentView" destination="5mU-LP-aEN" id="nY9-rZ-CFi"/>
+                <outlet property="window" destination="FHL-cw-KUc" id="de0-tX-AmR"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="aocsCalc" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="FHL-cw-KUc">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="464" y="1073" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+            <view key="contentView" id="vnm-l7-gQq">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mU-LP-aEN" customClass="ELIZHighlightView" customModule="aocsCalc" customModuleProvider="target">
+                        <rect key="frame" x="-8" y="0.0" width="488" height="270"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5mU-LP-aEN" secondAttribute="bottom" id="EhD-ew-9yY"/>
+                    <constraint firstItem="5mU-LP-aEN" firstAttribute="leading" secondItem="vnm-l7-gQq" secondAttribute="leading" id="fNj-9b-54n"/>
+                    <constraint firstAttribute="trailing" secondItem="5mU-LP-aEN" secondAttribute="trailing" id="gXQ-jd-aY6"/>
+                    <constraint firstItem="5mU-LP-aEN" firstAttribute="top" secondItem="vnm-l7-gQq" secondAttribute="top" id="rcN-mL-cxl"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="170" y="43"/>
+        </window>
+    </objects>
+</document>
