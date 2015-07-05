@@ -26,16 +26,18 @@ class MainWindowController: NSWindowController
         let calcViewController  = ELIZCalcView()
         let calcView            = calcViewController.view
         
+        calcView.translatesAutoresizingMaskIntoConstraints = false
+        
         calcContentView?.addSubview( calcViewController.view )
         
-        let bindings            = [ "calcView": calcView ]
-        
-        
-        let horizontalContraint:[AnyObject] = NSLayoutConstraint.constraintsWithVisualFormat( "H:|[calcView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: bindings )
-        let verticalContraint:[AnyObject]   = NSLayoutConstraint.constraintsWithVisualFormat( "V:|[calcView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: bindings )
-        
-        calcContentView?.addConstraints( horizontalContraint )
-        calcContentView?.addConstraints( verticalContraint )
+//        let bindings            = [ "calcView": calcView ]
+//        
+//        
+//        let horizontalContraint:[AnyObject] = NSLayoutConstraint.constraintsWithVisualFormat( "H:|[calcView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: bindings )
+//        let verticalContraint:[AnyObject]   = NSLayoutConstraint.constraintsWithVisualFormat( "V:|[calcView]|", options: NSLayoutFormatOptions(0), metrics: nil, views: bindings )
+//        
+//        calcContentView?.addConstraints( horizontalContraint )
+//        calcContentView?.addConstraints( verticalContraint )
 
         /*
        
